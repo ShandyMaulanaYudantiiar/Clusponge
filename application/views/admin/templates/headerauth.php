@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clustering Data Sponge Set</title>
+    <title>Admin Panel : Clustering Data Sponge Set</title>
     <link href="<?= base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/css/datepicker3.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/css/styles.css" rel="stylesheet">
