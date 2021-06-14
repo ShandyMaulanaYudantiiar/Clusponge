@@ -1,3 +1,13 @@
+<div class="col-sm-12">
+    <p class="back-link">Lumino Theme by <a href="https://www.medialoot.com">Medialoot</a></p>
+</div>
+</div><!-- /.row -->
+<!-- DataTables -->
+<script src="<?= base_url(); ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url(); ?>assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url(); ?>assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url(); ?>assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
 <script src="<?= base_url(); ?>assets/js/jquery-1.11.1.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/chart.min.js"></script>
@@ -17,7 +27,6 @@
         });
     };
 </script>
-
 </body>
 
 </html>
