@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2021 at 05:48 AM
+-- Generation Time: Jun 30, 2021 at 03:42 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -178,6 +178,15 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `tb_user`
+--
+
+INSERT INTO `tb_user` (`ID_USER`, `USERNAME`, `EMAIL`, `PASSWORD`, `FOTO`) VALUES
+(0, 'User', 'user@gmail.com', '$2y$10$hDtalNpbYyC4syC4d9i4o.RgDyU4XCBGHPXKz8W5Qzc1yRwhOyA6m', 'ic-centang-removebg-preview.png'),
+(2, 'Admin', 'admin@gmail.com', '$2y$10$EX0.IrgQw.DI/PbNInAlaOr5Y6G0fuIsO60jBMcKLOlXohAXALTE6', '1625047839.png'),
+(11, 'asdasd', 'asd@gmail.com', '$2y$10$q73wX7GDlU/7Uo7N11HGKeIXquzaL9YNm7Mf6I7Uz6sdWwmmH5j3m', '1625059630.png');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -207,7 +216,7 @@ ALTER TABLE `dataset`
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `ID_USER` int(2) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_USER` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
