@@ -6,20 +6,23 @@
             <div class="login-panel panel panel-default">
                 <div class="panel-heading">Log in</div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form action="" method="post">
+                        <?= $this->session->flashdata('pesan'); ?>
                         <fieldset>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Email" name="email" type="email" autofocus="">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                <input class="form-control" placeholder="Password" name="password" type="password">
                             </div>
                             <!-- <div class="checkbox">
                                 <label>
                                     <input name="remember" type="checkbox" value="Remember Me">Remember Me
                                 </label>
                             </div> -->
-                            <a href="<?= site_url('admin/Dashboard'); ?>" class="btn btn-primary" style="float: right">Login</a>
+                            <button type="submit" class="btn btn-block btn-primary">
+                                Log in
+                            </button>
                         </fieldset>
                     </form>
                 </div>

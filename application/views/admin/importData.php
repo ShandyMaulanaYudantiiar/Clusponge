@@ -15,7 +15,7 @@
         <li><a href="<?= base_url("admin/dashboard") ?>">
                 <em class="fa fa-home"></em>
             </a></li>
-        <li><a href="<?= base_url("admin/importData") ?>">Import Data</a></li>
+        <li>Import Data</li>
     </ol>
 </div>
 <!--/.row-->

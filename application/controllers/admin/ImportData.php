@@ -8,7 +8,7 @@ class ImportData extends CI_Controller
     {
         parent::__construct();
 
-        // Load member model
+        // Load data model
         $this->load->model('Importcsv');
 
         // Load form validation library
@@ -16,6 +16,9 @@ class ImportData extends CI_Controller
 
         // Load file helper
         $this->load->helper('file');
+
+        //Check session
+        belumlogin();
     }
 
     public function index()

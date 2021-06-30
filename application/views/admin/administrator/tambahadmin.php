@@ -34,23 +34,34 @@
             <div class="panel-heading">Forms</div>
             <div class="panel-body">
                 <div class="col-md-12">
-                    <form role="form">
+                    <form method="post" action="<?= site_url('admin/admin/tambah') ?>" enctype="multipart/form-data">
                         <div class="form-group">
                             <label>Username</label>
-                            <input class="form-control" placeholder="Username">
+                            <input class="form-control" id="username" name="username" type="text" placeholder="Username" value="<?= set_value('username'); ?>">
+                            <?= form_error('username', '<small class="text-danger pl-2">', '</small>'); ?>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input class="form-control" placeholder="Email">
+                            <input class="form-control" id="email" name="email" type="text" placeholder="Email" value="<?= set_value('email'); ?>">
+                            <?= form_error('email', '<small class="text-danger pl-2">', '</small>'); ?>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input id="password" name="password" type="password" class="form-control" placeholder="Password">
+                            <?= form_error('password', '<small class="text-danger pl-2">', '</small>'); ?>
+                        </div>
+                        <div class="form-group">
+                            <label>Repeat Password</label>
+                            <input id="password2" name="password2" type="password" class="form-control" placeholder="Repeat Password">
+                            <?= form_error('password2', '<small class="text-danger pl-2">', '</small>'); ?>
                         </div>
                         <div class="form-group">
                             <label>Upload Foto</label>
-                            <input type="file">
+                            <input name="foto" id="foto" type="file" accept="image/*" onchange="tampilkanPreview(this,'preview')" placeholder="" required>
                             <p class="help-block" style="color: red;">*Upload foto berekstensi gambar dengan ukuran maksimal 2mb.</p>
+                        </div>
+                        <div class="form-group">
+                            <img id="preview" src="" alt="" width="320px">
                         </div>
                         <a href="<?= site_url('admin/admin') ?>" class="btn btn-danger btn-icon-split">
                             <span class="icon text-white-50">
@@ -69,6 +80,34 @@
             </div>
         </div>
     </div><!-- /.panel-->
+    <script>
+        function tampilkanPreview(gambar, idpreview) {
+            // membuat objek gambar
+            var gb = gambar.files;
+            // loop untuk merender gambar
+            for (var i = 0; i < gb.length; i++) {
+                // bikin variabel
+                var gbPreview = gb[i];
+                var imageType = /image.*/;
+                var preview = document.getElementById(idpreview);
+                var reader = new FileReader();
+                if (gbPreview.type.match(imageType)) {
+                    // jika tipe data sesuai
+                    preview.file = gbPreview;
+                    reader.onload = (function(element) {
+                        return function(e) {
+                            element.src = e.target.result;
+                        };
+                    })(preview);
+                    // membaca data URL gambar
+                    reader.readAsDataURL(gbPreview);
+                } else {
+                    // jika tipe data tidak sesuai
+                    alert("Hanya dapat menampilkan preview tipe gambar. Harap simpan perubahan untuk melihat dan merubah gambar.");
+                }
+            }
+        }
+    </script>
 </div><!-- /.col-->
 
 <!-- Footer -->

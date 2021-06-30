@@ -10,7 +10,7 @@
             <div class="model-body">Pilih "Logout" untuk keluar, pilih "Cancel" untuk kembali ke Panel Admin.</div>
             <div class="modal-footer">
                 <button class="btn btn-info" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger" href="<?= site_url('admin/Auth') ?>">Logout</a>
+                <a class="btn btn-danger" href="<?= site_url('admin/Auth/logout') ?>">Logout</a>
                 <!-- <a class="btn btn-danger" href="<?= site_url('admin/Auth/logout') ?>">Logout</a> -->
             </div>
         </div>
