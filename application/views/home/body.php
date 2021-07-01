@@ -13,8 +13,9 @@
     <nav id="nav">
         <ul>
             <li><a href="#intro" class="active">Introduction</a></li>
-            <li><a href="#perhitungan">Perhitungan</a></li>
+            <li><a href="#klastering">Klastering</a></li>
             <li><a href="#tentangKami">Tentang Kami</a></li>
+            <li><a href="Admin/auth">Login</a></li>
         </ul>
     </nav>
 
@@ -26,11 +27,12 @@
                 <div class="spotlight">
                     <div class="content">
                         <header class="major">
-                            <h2>Terumbu Karang</h2>
+                            <h2>Spons Laut</h2>
                         </header>
-                        <p>A sponge is a member of the phylum Porifera. It is a simple animal with many cells, but no mouth,
-                            muscles, heart or brain. It is sessile: it cannot move from place to place the way most animals can.
-                            A sponge is an animal that grows in one spot like most plants do. Nevertheless, sponges are quite successful.</p>
+                        <p>Spons laut adalah anggota dari filum Porifera. Ini adalah hewan sederhana dengan banyak sel, 
+                            tetapi tidak memiliki mulut, otot, jantung atau otak. Ia tidak dapat berpindah dari satu tempat 
+                            ke tempat lain seperti yang dapat dilakukan kebanyakan hewan. Spons Laut adalah hewan yang tumbuh 
+                            di satu tempat seperti kebanyakan tumbuhan. Namun demikian, spons cukup berhasil.</p>
                         <!-- <ul class="actions">
                             <li><a href="generic.html" class="button">Learn More</a></li>
                         </ul> -->
@@ -39,10 +41,10 @@
                 </div>
             </section>
 
-        <!-- Perhitungan -->
-            <section id="perhitungan" class="main special">
+        <!-- Klastering -->
+            <section id="klastering" class="main special">
                 <header class="major">
-                    <h2>Perhitungan</h2>
+                    <h2>Klastering K-Means</h2>
                 </header>
                 <ul class="features">
                     <li>
@@ -61,26 +63,26 @@
                         <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
                     </li>
                 </ul>
-                <footer class="major">
+                <!-- <footer class="major">
                     <ul class="actions special">
                         <li><a href="generic.html" class="button">Learn More</a></li>
                     </ul>
-                </footer>
+                </footer> -->
             </section>
 
         <!-- Tentang Kami -->
             <section id="tentangKami" class="main special">
                 <header class="major">
-                    <h2>Congue imperdiet</h2>
+                    <h2>Tentang Kami</h2>
                     <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
                     posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
                 </header>
-                <footer class="major">
+                <!-- <footer class="major">
                     <ul class="actions special">
                         <li><a href="generic.html" class="button primary">Get Started</a></li>
                         <li><a href="generic.html" class="button">Learn More</a></li>
                     </ul>
-                </footer>
+                </footer> -->
             </section>
 
     </div>
