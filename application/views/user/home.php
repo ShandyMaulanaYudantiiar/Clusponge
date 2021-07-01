@@ -42,32 +42,24 @@
             </section>
 
         <!-- Klastering -->
-            <section id="klastering" class="main special">
+            <section id="tentangKami" class="main special">
                 <header class="major">
                     <h2>Klastering K-Means</h2>
+                    <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+                    posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
                 </header>
-                <ul class="features">
-                    <li>
-                        <span class="icon solid major style1 fa-code"></span>
-                        <h3>Ipsum consequat</h3>
-                        <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-                    </li>
-                    <li>
-                        <span class="icon major style3 fa-copy"></span>
-                        <h3>Amed sed feugiat</h3>
-                        <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-                    </li>
-                    <li>
-                        <span class="icon major style5 fa-gem"></span>
-                        <h3>Dolor nullam</h3>
-                        <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-                    </li>
-                </ul>
-                <!-- <footer class="major">
+                <footer class="major">
                     <ul class="actions special">
-                        <li><a href="generic.html" class="button">Learn More</a></li>
+                        <li><a href="perhitungan" class="button primary">Ayo Mulai</a></li>
+                        <li><a href="https://www.google.com/search?q=k-means+adalah&safe=strict&sx
+                        srf=ALeKk00FHnSGDQzTPkyZDk-fgbwRTRvD0A%3A1625129422506&ei=zoHdYOS2Hs78rQGl
+                        1qCwCw&oq=k-means+ada&gs_lcp=Cgdnd3Mtd2l6EAMYADICCAAyAggAMgYIABAWEB4yBggAE
+                        BYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCCM
+                        QsAMQJzoHCAAQRxCwAzoECCMQJzoFCAAQywFKBAhBGABQozRYkTlgxUBoAXACeACAAbsBiAG8B
+                        ZIBAzMuM5gBAKABAaoBB2d3cy13aXrIAQnAAQE&sclient=gws-wiz"
+                        target="_blank" class="button">Pelajari</a></li>
                     </ul>
-                </footer> -->
+                </footer>
             </section>
 
         <!-- Tentang Kami -->
