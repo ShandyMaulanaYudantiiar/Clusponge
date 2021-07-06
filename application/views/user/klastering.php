@@ -12,17 +12,24 @@
 
         <!-- Content -->
         <section id="content" class="main">
-        <?php
-        var_dump($coba);
+        <div class="col-md">
 
-        // RUMUS
-        //Proses Pencarian Nilai Centro 1
-		// $hasilc1=sqrt(pow($A.CAPAS_DEL_CORTEX-$centro1[$loop],2) +
-		// 	pow($A.CAPA_INTERNA_DEL_CORTEX-$centro1[$loop],2) + 
-		// 	pow($A.CORTEX-$centro1[$loop],2));
-        // Loop itu perulangan nambah terus
-        ?>
+            <h4>Tentukan Fakta yang ada :</h4>
+            <form action="<?= base_url(); ?>Perhitungan/hasil" method="POST" name="form1">
+                <table align = "center">
+                    <tbody>
+                        <tr>
+                            <th><label>Masukkan Jumalah Kluster</label><input type="text" name="jumklas"></th>
+                        </tr>
+                        <tr>
+                            <th><input type="submit" name="submit" value="submit" /></th>
+                        </tr>
+                    </tbody>
+                </table>
 
+            </form>
+
+        </div>
         </section>
 
     </div>
