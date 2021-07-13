@@ -22,8 +22,17 @@ class Perhitungan extends CI_Controller {
 		$centroid = $this->Centroid_Random($data,$jumlah_centroid);
 		$cluster = $this->clustering($data, $centroid);
 		$new_centroid = $this->newCentroid($data, $cluster, $centroid);
-		
-		var_dump($cluster);
+
+		$hasil = array();
+		$hasil['jumlah_centroid'] = $jumlah_centroid;
+		$hasil['jumlah_data'] = $this->KMeans->hitungBaris();
+		$hasil['centroid'] = $centroid;
+		$hasil['cluster'] = $cluster;
+		$hasil['Spesies'] = $this->KMeans->getNama();
+
+		$this->load->view('template/head');
+		$this->load->view('user/hasil', $hasil);
+		$this->load->view('template/foot');
 	}
 
 	public function Centroid_Random($data, $jumlah_centroid)	{
@@ -68,11 +77,10 @@ class Perhitungan extends CI_Controller {
 				// agar tidak terjadi salah perhitungan pada looping berikutnya.
 				$jarak_centroid[$row_m_data][$row_m_centroid] = 0.0;
 				$jarak = 0.0;
-				// echo "sqrt(";
+
 				foreach($m_centroid as $row_single_centroid => $single_centroid){
 					$single_data = $m_data[$row_single_centroid];
 					$jarak += pow(($single_data - $single_centroid), 2);
-					// echo"(($single_data - $single_centroid)^ 2) [$jarak] + ";
 				}
 				// echo ")";
 				$hasil = round(sqrt($jarak),2);
@@ -90,12 +98,6 @@ class Perhitungan extends CI_Controller {
 		foreach($jarak_centroid as $m_jarak){ // Menghitung jarak terdekat
 			$nearest_cluster[] = array_search(min($m_jarak), $m_jarak);
 		}
-
-		// echo "<br><br>";
-		// echo"new centroid<br>";
-		// print_r(json_encode($new_centroid));
-		// echo "<br><br>";
-
 		return $nearest_cluster;
 	}
 
