@@ -12,24 +12,31 @@
 
         <!-- Content -->
         <section id="content" class="main">
-        <div class="col-md">
+            <div class="col-md">
 
-            <h4>Tentukan Fakta yang ada :</h4>
-            <form action="<?= base_url(); ?>Perhitungan/hasil" method="POST" name="form1">
-                <table align = "center">
-                    <tbody>
-                        <tr>
-                            <th><label>Masukkan Jumalah Kluster</label><input type="text" name="jumklas"></th>
-                        </tr>
-                        <tr>
-                            <th><input type="submit" name="submit" value="submit" /></th>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- Form -->
+                <section>
+                    <h2 class="text-center">Masukan Jumlah Kluster</h2>
+                    <form action="<?= base_url(); ?>hasil" method="POST" name="form1">
+                        <div class="row gtr-uniform">
+                            <div class="col-8 col-12-xsmall">
+                                <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"" name=" jumklas" />
 
-            </form>
+                            </div>
+                            <div class="col-4 col-12-xsmall">
+                                <ul class="actions">
+                                    <li><input type="submit" name="submit" value="Submit" class="button primary" /></li>
+                                    <!-- <li><input type="reset" value="Reset" /></li> -->
+                                    <li><a href="<?=base_url(); ?>" class="button">Kembali</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
 
-        </div>
+
+            </div>
         </section>
+
 
     </div>

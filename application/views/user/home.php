@@ -42,7 +42,7 @@
             </section>
 
         <!-- Klastering -->
-            <section id="tentangKami" class="main special">
+            <section id="klastering" class="main special">
                 <header class="major">
                     <h2>Klastering K-Means</h2>
                     <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
