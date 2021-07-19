@@ -23,9 +23,29 @@ class Perhitungan extends CI_Controller {
 		$cluster = $this->clustering($data, $centroid);
 		$new_centroid = $this->newCentroid($data, $cluster, $centroid);
 
+		$iterasi = 1;
+		// Proses pengclusteran dan penentuan cetntroid baru akan di ulang sampai tidak -
+		// ada perubahan titik pada centroid baru dengan centroid sebelumnya
+		while($new_centroid!=$centroid){
+			$iterasi++;
+			$centroid = $new_centroid;
+			$cluster = $this->clustering($data, $centroid);
+			$new_centroid = $this->newCentroid($data, $cluster, $centroid);
+		}
+		// var_dump($centroid);
+		// var_dump($cluster2);
+		
+		var_dump($cluster);
+		$multi_cluster=array();
+		foreach($cluster as $row_m_cluster=>$m_cluster){
+			$multi_cluster[$m_cluster][] = $row_m_cluster;
+		}
+		var_dump($multi_cluster);
+
 		$hasil = array();
 		$hasil['jumlah_centroid'] = $jumlah_centroid;
 		$hasil['jumlah_data'] = $this->KMeans->hitungBaris();
+		$hasil['jumlah_iterasi'] = $iterasi;
 		$hasil['centroid'] = $centroid;
 		$hasil['cluster'] = $cluster;
 		$hasil['Spesies'] = $this->KMeans->getNama();
@@ -65,6 +85,7 @@ class Perhitungan extends CI_Controller {
 			$data_centroid[$key_CRandom] = $data[$value_CRandom];
 			// Memasukkan value Centroid random ke Data Centroid
 		}
+		
 		return $data_centroid;
 	}
 
@@ -122,7 +143,7 @@ class Perhitungan extends CI_Controller {
 		// di kembalikan kedalam variable yang memanggil fungsi new_centroid()
 		$centroid_baru = array();
 		foreach($multi_cluster as $row_m_multi_cluster=>$m_multi_cluster){
-			foreach($centroid[0] as $row_m_centroid=>$_m_centroid){ 
+			foreach($centroid[0] as $row_m_centroid=>$_m_centroid){ // hanya agar looping sebanyak jumlah mapel :D
 				$temp_centroid = 0;
 				// echo "<br>start||";
 				foreach($m_multi_cluster as $n_multi_cluster){
@@ -131,12 +152,9 @@ class Perhitungan extends CI_Controller {
 					// echo "[$n_multi_cluster][$row_m_centroid]=$original +   ";
 				}
 				$temp_centroid = round($temp_centroid/count($m_multi_cluster), 2);
-				$centroid_baru[$row_m_multi_cluster][] = $temp_centroid;
-				// echo " / ". count($m_multi_cluster) . "= ". $temp_centroid ;
+				$centroid_baru[$row_m_multi_cluster][$row_m_centroid] = $temp_centroid;
 			}
-		}
-		// echo "<br>";
-		return $centroid_baru;
+    }return $centroid_baru;
 	}
 }
 
