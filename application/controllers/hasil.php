@@ -1,21 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Perhitungan extends CI_Controller {
+
+class hasil extends CI_Controller {
 
 	function __construct()	{
-    parent::__construct();
-
-        // Load data model
-        $this->load->model('KMeans');
-    }
+        parent::__construct();
+        
+    
+            // Load data model
+            $this->load->model('KMeans');
+        }
 
 	public function index()	{
-		$this->load->view('template/head');
-		$this->load->view('user/klastering');
-		$this->load->view('template/foot');
-	}
-
-	public function hasil()	{
 		$jumlah_centroid = $_POST['jumklas'];
 		$data = $this->KMeans->getData();		//mengambil Seluruh data
 
@@ -23,31 +19,19 @@ class Perhitungan extends CI_Controller {
 		$cluster = $this->clustering($data, $centroid);
 		$new_centroid = $this->newCentroid($data, $cluster, $centroid);
 
-		$iterasi = 1;
-		// Proses pengclusteran dan penentuan cetntroid baru akan di ulang sampai tidak -
-		// ada perubahan titik pada centroid baru dengan centroid sebelumnya
-		while($new_centroid!=$centroid){
-			$iterasi++;
-			$centroid = $new_centroid;
-			$cluster = $this->clustering($data, $centroid);
-			$new_centroid = $this->newCentroid($data, $cluster, $centroid);
-		}
-		var_dump($centroid);
-		var_dump($cluster);
-		var_dump($new_centroid);
-		// $hasil = array();
-		// $hasil['jumlah_centroid'] = $jumlah_centroid;
-		// $hasil['jumlah_data'] = $this->KMeans->hitungBaris();
-		// $hasil['centroid'] = $centroid;
-		// $hasil['cluster'] = $cluster;
-		// $hasil['Spesies'] = $this->KMeans->getNama();
+		$hasil = array();
+		$hasil['jumlah_centroid'] = $jumlah_centroid;
+		$hasil['jumlah_data'] = $this->KMeans->hitungBaris();
+		$hasil['centroid'] = $centroid;
+		$hasil['cluster'] = $cluster;
+		$hasil['Spesies'] = $this->KMeans->getNama();
 
-		// $this->load->view('template/head');
-		// $this->load->view('user/hasil', $hasil);
-		// $this->load->view('template/foot');
+		$this->load->view('template/head');
+		$this->load->view('user/hasil', $hasil);
+		$this->load->view('template/foot');
 	}
 
-	public function Centroid_Random($data, $jumlah_centroid)	{
+    public function Centroid_Random($data, $jumlah_centroid)	{
 		$index_data = count($data)-1;  //Karena Index dimulai dari 0. maka jumlah index jumlah data - 1
 		// Deklarasi Variable array
 		$centroid_random = array();	
@@ -77,7 +61,6 @@ class Perhitungan extends CI_Controller {
 			$data_centroid[$key_CRandom] = $data[$value_CRandom];
 			// Memasukkan value Centroid random ke Data Centroid
 		}
-		
 		return $data_centroid;
 	}
 
@@ -152,5 +135,3 @@ class Perhitungan extends CI_Controller {
 		return $centroid_baru;
 	}
 }
-
-// Logika Iterasi 1 = panggil array data & Cluster Random -> lakukan Looping perhitungan pada Semua Cluster untuk Setiap Data -> Pilih Nilai terkecil

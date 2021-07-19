@@ -11,7 +11,7 @@ class Importcsv extends CI_Model
     }
 
     /*
-     * Fetch members data from the database
+     * Fetch sponge data from the database
      * @param array filter data based on the passed parameters
      */
     function getRows($params = array())
@@ -50,7 +50,7 @@ class Importcsv extends CI_Model
     }
 
     /*
-     * Insert members data into the database
+     * Insert sponge data into the database
      * @param $data data to be insert based on the passed parameters
      */
     public function insert($data = array())
@@ -74,7 +74,7 @@ class Importcsv extends CI_Model
     }
 
     /*
-     * Update member data into the database
+     * Update sponge data into the database
      * @param $data array to be update based on the passed parameters
      * @param $condition array filter data
      */
