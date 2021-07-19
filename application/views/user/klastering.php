@@ -4,7 +4,6 @@
     <!-- Header -->
     <header id="header">
         <h1>Klastering K-Means</h1>
-        <p>Ipsum dolor sit amet nullam</p>
     </header>
 
     <!-- Main -->
