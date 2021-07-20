@@ -53,7 +53,9 @@
                                             </td>
                                 </tr>
                                 <?php }?>
+				
                         </table>
+				<a href="<?=base_url("perhitungan"); ?>" class="button primary">Kembali</a>
                     </fieldset>
                 </section>
 

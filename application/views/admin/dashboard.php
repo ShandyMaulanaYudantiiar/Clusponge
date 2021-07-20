@@ -40,7 +40,7 @@
         <div class="col-xs-6 col-md-3 col-lg-3 no-padding">
             <div class="panel panel-blue panel-widget border-right">
                 <div class="row no-padding"><em class="fa fa-xl fa-file color-orange"></em>
-                    <div class="large">75</div>
+                    <div class="large">76</div>
                     <div class="text-muted">Value</div>
                 </div>
             </div>

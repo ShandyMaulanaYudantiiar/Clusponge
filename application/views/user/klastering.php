@@ -20,7 +20,7 @@
                         <div class="row gtr-uniform">
                             <div class="col-8 col-12-xsmall">
                                 <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"" name=" jumklas" />
-
+				<p class="help-block" style="color: red;">*Masukkan jumlah maksimal 76 kluster</p>
                             </div>
                             <div class="col-4 col-12-xsmall">
                                 <ul class="actions">
