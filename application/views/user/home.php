@@ -50,7 +50,7 @@
             <footer class="major">
                 <ul class="actions special">
                     <li><a href="perhitungan" class="button primary">Ayo Mulai</a></li>
-                    <li><a href="hhttps://drive.google.com/file/d/1hi3aKewtSdQa5YU03JyRmICQW4SMNjL5/view?usp=sharing" target="_blank" class="button">Pelajari</a></li>
+                    <li><a href="https://drive.google.com/file/d/1hi3aKewtSdQa5YU03JyRmICQW4SMNjL5/view?usp=sharing" target="_blank" class="button">Pelajari</a></li>
                 </ul>
             </footer>
         </section>
