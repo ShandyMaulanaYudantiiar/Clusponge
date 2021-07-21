@@ -50,12 +50,7 @@
             <footer class="major">
                 <ul class="actions special">
                     <li><a href="perhitungan" class="button primary">Ayo Mulai</a></li>
-                    <li><a href="https://www.google.com/search?q=k-means+adalah&safe=strict&sx
-                        srf=ALeKk00FHnSGDQzTPkyZDk-fgbwRTRvD0A%3A1625129422506&ei=zoHdYOS2Hs78rQGl
-                        1qCwCw&oq=k-means+ada&gs_lcp=Cgdnd3Mtd2l6EAMYADICCAAyAggAMgYIABAWEB4yBggAE
-                        BYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCCM
-                        QsAMQJzoHCAAQRxCwAzoECCMQJzoFCAAQywFKBAhBGABQozRYkTlgxUBoAXACeACAAbsBiAG8B
-                        ZIBAzMuM5gBAKABAaoBB2d3cy13aXrIAQnAAQE&sclient=gws-wiz" target="_blank" class="button">Pelajari</a></li>
+                    <li><a href="hhttps://drive.google.com/file/d/1hi3aKewtSdQa5YU03JyRmICQW4SMNjL5/view?usp=sharing" target="_blank" class="button">Pelajari</a></li>
                 </ul>
             </footer>
         </section>
