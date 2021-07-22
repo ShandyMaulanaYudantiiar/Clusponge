@@ -78,9 +78,12 @@
                                                                     <a href="<?= base_url('admin/admin/edit/' . $row->ID_USER) ?>" class="btn btn-primary">
                                                                         <i class="fa fa-pencil"></i>
                                                                     </a>
-                                                                    <a href="<?php echo site_url('admin/admin/delete/' . $row->ID_USER) ?>" onclick="confirm_modal('<?php echo 'admin/delete/' . $row->ID_USER; ?>')" class="btn btn-danger" data-toggle="modal" data-target="#hapusModal">
+                                                                    <a href="<?php echo site_url('admin/admin/delete/' . $row->ID_USER) ?>" class="btn btn-danger" >
                                                                         <i class="fa fa-trash"></i>
                                                                     </a>
+                                                                    <!-- <a href="<?php echo site_url('admin/admin/delete/' . $row->ID_USER) ?>" onclick="confirm_modal('<?php echo 'admin/delete/' . $row->ID_USER; ?>')" class="btn btn-danger" data-toggle="modal" data-target="#hapusModal">
+                                                                        <i class="fa fa-trash"></i>
+                                                                    </a> -->
                                                                 <?php } ?>
                                                             </td>
                                                         </tr>
@@ -88,7 +91,7 @@
                                                     endforeach; ?>
                                                 </tbody>
                                             </table>
-                                            <div class="modal fade" id="hapusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <!-- <div class="modal fade" id="hapusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
@@ -106,7 +109,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -119,14 +122,14 @@
     </div>
 </div>
 </div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     function confirm_modal(delete_url) {
         $('#hapusModal').modal('show', {
             backdrop: 'static'
         });
         document.getElementById('delete_link').setAttribute('href', delete_url);
     }
-</script>
+</script> -->
 
 <!-- Footer -->
 <?php $this->load->view('admin/templates/footer.php'); ?>

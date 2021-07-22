@@ -49,7 +49,7 @@ class Auth extends CI_Controller
         $this->session->unset_userdata('USERNAME');
         $this->session->unset_userdata('EMAIL');
         $this->session->unset_userdata('FOTO');
-        $this->session->set_flashdata('pesan', '<div class="alert alert-success" role="alert">Anda berhasil logout! Silahkan login untuk melanjutkan.</div>');
-        redirect('admin/Auth');
+        $this->session->set_flashdata('pesan', '<div class="alert alert-success" style="color: yellow;" role="alert">Anda berhasil logout! Silahkan login untuk melanjutkan.</div>');
+        redirect('Home');
     }
 }

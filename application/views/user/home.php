@@ -5,6 +5,7 @@
     <header id="header" class="alt">
         <h1>Clustering for Sponge Dataset</h1>
         <p>Klastering dataset terumbu karang dengan metode K-means klastering<br />
+        <?= $this->session->flashdata('pesan'); ?>
     </header>
 
     <!-- Nav -->
@@ -59,7 +60,7 @@
         <section id="tentangKami" class="main special">
             <header class="major">
                 <h2>Tentang Kami</h2>
-                <p>Kelompok 30, Semseter 6, Teknik Informatika, Politeknik Negeri Jember. <br>
+                <p><b> Kelompok 30 - Program Studi Teknik Informatika, Jurusan Teknologi Informasi, Politeknik Negeri Jember.</b> <br>
                     <br>
                     Shandy Maulana Yudantiar (E41180463)<br>
                     Ridho Dwi Ramadhan (E41180382)<br>

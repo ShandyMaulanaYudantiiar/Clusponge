@@ -23,6 +23,9 @@
                             <button type="submit" class="btn btn-block btn-primary">
                                 Log in
                             </button>
+                            <a href="<?= base_url() ?>" class="btn btn-block btn btn-danger">
+                                <i class="fa fa-reply"></i>
+                                <span class="text">Kembali</span></a>
                         </fieldset>
                     </form>
                 </div>

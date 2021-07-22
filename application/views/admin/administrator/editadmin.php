@@ -72,7 +72,7 @@
                         </a>
                         <button type="submit" href="<?= site_url('admin/admin') ?>" class="btn btn-info btn-icon-split">
                             <span class="icon text-white-50">
-                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-save"></i>
                             </span>
                             <span class="text">Edit Akun</span>
                         </button>
