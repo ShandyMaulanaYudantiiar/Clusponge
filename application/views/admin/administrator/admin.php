@@ -121,7 +121,6 @@
         </div>
     </div>
 </div>
-</div>
 <!-- <script type="text/javascript">
     function confirm_modal(delete_url) {
         $('#hapusModal').modal('show', {

@@ -44,7 +44,7 @@
             <div class="panel-heading">
                 <div class="col-md-12 head">
                     <div class="float-right">
-                        <a href="javascript:void(0);" class="btn btn-danger" onclick="formToggle('importFrm');"><i class="fa fa-plus"></i> Perbarui dataset</a>
+                        <a href="javascript:void(0);" class="btn btn-danger" onclick="formToggle('importFrm');"><i class="fa fa-plus"></i> Import dataset</a>
                     </div>
                 </div>
             </div>

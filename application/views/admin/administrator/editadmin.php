@@ -74,7 +74,7 @@
                             <span class="icon text-white-50">
                                 <i class="fa fa-save"></i>
                             </span>
-                            <span class="text">Edit Akun</span>
+                            <span class="text">Simpan</span>
                         </button>
                     </form>
                 </div>

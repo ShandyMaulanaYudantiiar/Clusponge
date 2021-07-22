@@ -4,7 +4,7 @@
     <!-- Header -->
     <header id="header" class="alt">
         <h1>Clustering for Sponge Dataset</h1>
-        <p>Klastering dataset terumbu karang dengan metode K-means klastering<br />
+        <p>Klasterisasi terumbu karang dengan menggunakan metode K - Means Clustering<br />
         <?= $this->session->flashdata('pesan'); ?>
     </header>
 
