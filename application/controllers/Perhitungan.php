@@ -7,11 +7,13 @@ class Perhitungan extends CI_Controller {
 
         // Load data model
         $this->load->model('KMeans');
+		$this->load->model('Importcsv');
     }
 
 	public function index()	{
+		$data['dataset'] = $this->Importcsv->getRows();
 		$this->load->view('template/head');
-		$this->load->view('user/klastering');
+		$this->load->view('user/klastering', $data);
 		$this->load->view('template/foot');
 	}
 }
