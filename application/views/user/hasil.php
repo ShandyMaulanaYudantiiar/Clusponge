@@ -58,8 +58,8 @@
                 <section>
                     <fieldset>
                         <legend>Parameter</legend>
-                        Jumlah Cluster =<?php echo $jumlah_centroid; ?><br>
-                        Jumlah iterasi =<?php echo $jumlah_iterasi; ?><br>
+                        Jumlah Cluster = <?php echo $jumlah_centroid; ?><br>
+                        Jumlah iterasi = <?php echo $jumlah_iterasi; ?><br>
                     </fieldset>
                     <fieldset>
                         <legend>
