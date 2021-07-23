@@ -23,12 +23,16 @@
 
         legend {
             font-weight: bold;
-            text-align: center;
             border-radius: 5px;
             width: 100px;
             padding: 5px;
             background-color: #0084b4;
             color: #ffffff;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
         }
 
         .inptxt {
@@ -44,7 +48,7 @@
 
     <!-- Header -->
     <header id="header">
-        <h1>Hasil Clustering K-Means</h1>
+        <h1>Hasil Clustering K - Means</h1>
     </header>
 
     <!-- Main -->
@@ -57,13 +61,15 @@
                 <!-- Form -->
                 <section>
                     <fieldset>
-                        <legend>Parameter</legend>
+                        <legend>
+                            <p>Parameter</p>
+                        </legend>
                         Jumlah Cluster = <?php echo $jumlah_centroid; ?><br>
                         Jumlah iterasi = <?php echo $jumlah_iterasi; ?><br>
                     </fieldset>
                     <fieldset>
                         <legend>
-                            Hasil
+                            <p>Hasil</p>
                         </legend>
                         <table border="1">
                             <tr>
@@ -92,3 +98,4 @@
             <a href="<?= base_url("perhitungan"); ?>" class="button primary">Kembali</a>
         </section>
     </div>
+</div>
