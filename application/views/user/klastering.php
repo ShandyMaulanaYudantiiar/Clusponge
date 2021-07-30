@@ -18,7 +18,7 @@
                     <form action="<?= base_url(); ?>hasil" method="POST" name="form1">
                         <div class="row gtr-uniform">
                             <div class="col-8 col-12-xsmall">
-                                <input type="number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" name=" jumklas" min="1" max="76" required />
+                                <input type="number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" name="jumklas" min="1" max="76" required />
                                 <p class="help-block" style="color: red;">* Harap tidak melebihi batas 76 klaster.</p>
                             </div>
                             <div class="col-4 col-12-xsmall">
