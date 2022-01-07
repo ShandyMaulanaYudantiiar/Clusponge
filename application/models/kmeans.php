@@ -3,13 +3,15 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class KMeans extends CI_Model
 {
-    public function __construct()    {
+    public function __construct()
+    {
         parent::__construct();
         $this->load->database();
     }
 
     // DATA RANDOM
-    public function random($jk)    {
+    public function random($jk)
+    {
         return $this->db->query("SELECT A_CAPAS_DEL_CORTEX,
                                         A_CAPA_INTERNA_DEL_CORTEX,
                                         A_CORTEX,
@@ -58,12 +60,14 @@ class KMeans extends CI_Model
     }
 
     // GET DATA dari Model
-    function getAll()   {
+    function getAll()
+    {
         return $this->db->query("SELECT * FROM dataset")->result_array();
     }
 
     // GET DATA dari Model
-    function getData()   {
+    function getData()
+    {
         return $this->db->query("SELECT A_CAPAS_DEL_CORTEX,
                                         A_CAPA_INTERNA_DEL_CORTEX,
                                         A_CORTEX,
@@ -112,14 +116,14 @@ class KMeans extends CI_Model
     }
 
     // GET DATA dari Model
-    function getNama()   {
+    function getNama()
+    {
         return $this->db->query("SELECT SPESIES FROM dataset")->result_array();
     }
 
     // GET Jumlah Row dataset
-    function hitungBaris()  {
+    function hitungBaris()
+    {
         return $this->db->query("SELECT * FROM dataset")->num_rows();
     }
-
 }
-

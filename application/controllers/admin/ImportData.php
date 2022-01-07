@@ -58,7 +58,7 @@ class ImportData extends CI_Controller
 
                 // If file uploaded
                 if (is_uploaded_file($_FILES['file']['tmp_name'])) {
-                    // Load CSV reader library
+                    //  Load CSV reader library
                     $this->load->library('CSVReader');
 
                     // Parse data from CSV file

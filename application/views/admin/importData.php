@@ -57,18 +57,6 @@
                             <p class="help-block" style="color: red;">*Upload dataset berekstensi csv.</p>
                         </div>
                         <input type="submit" class="btn btn-primary" name="importSubmit" value="IMPORT">
-                        <!-- <a href="<?= site_url('admin/admin') ?>" class="btn btn-danger btn-icon-split">
-                            <span class="icon text-white-50">
-                                <i class="fa fa-reply"></i>
-                            </span>
-                            <span class="text">Kembali</span>
-                        </a>
-                        <button type="submit" href="<?= site_url('admin/admin') ?>" class="btn btn-info btn-icon-split">
-                            <span class="icon text-white-50">
-                                <i class="fa fa-plus"></i>
-                            </span>
-                            <span class="text">Upload</span>
-                        </button> -->
                     </form>
                 </div>
             </div>

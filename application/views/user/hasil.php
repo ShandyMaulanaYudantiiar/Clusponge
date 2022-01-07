@@ -66,18 +66,18 @@
                         </legend>
                         Jumlah Cluster = <?php echo $jumlah_centroid; ?><br>
                         Jumlah iterasi = <?php echo $jumlah_iterasi; ?><br>
-                        </fieldset>
-                        <fieldset>
+                    </fieldset>
+                    <fieldset>
                         <legend>
                             <p>Centroid Akhir</p>
                         </legend>
-                        <?php foreach($centroid as $row_m_centroid => $m_centroid):?>
-                    <?="<div class=\"mb-3\">"?>
-                    <?="<label style=\" padding-top: 25px;\" class=\"form-label\">Centroid ".($row_m_centroid+1)."</label>"?>
-                    <?="<input type=\"text\" class=\"form-control form-control-sm\" value=\"".implode(", ", $m_centroid)."\" readonly>"?>
-                    <?="</div>"?>
-                <?php endforeach?>
-                        </fieldset>                    
+                        <?php foreach ($centroid as $row_m_centroid => $m_centroid) : ?>
+                            <?= "<div class=\"mb-3\">" ?>
+                            <?= "<label style=\" padding-top: 25px;\" class=\"form-label\">Centroid " . ($row_m_centroid + 1) . "</label>" ?>
+                            <?= "<input type=\"text\" class=\"form-control form-control-sm\" value=\"" . implode(", ", $m_centroid) . "\" readonly>" ?>
+                            <?= "</div>" ?>
+                        <?php endforeach ?>
+                    </fieldset>
                     <fieldset>
                         <legend>
                             <p>Hasil</p>
